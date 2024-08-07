@@ -1,0 +1,33 @@
+
+/*global */
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* global for container */
+
+.container {
+    text-align: center;
+}
+
+/* image- need to align with text and to make smaller */
+
+.ttl{
+    margin: 10px;
+    border: 10px;
+}
+
+.ttl h1{
+    float: right;
+}
+
+
+.hd img{
+    float: left;
+    left:210px;
+    top:20px;
+    width:100px;
+}

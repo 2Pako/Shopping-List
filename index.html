@@ -4,34 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
 </head>
-<body class = 'container'>
+<body>
+    <div class = 'container'>
+        <!-- Adding the icon and the title -->
 
-    <!-- Adding the icon and the title -->
+        <header class = 'hd'>
+                <img id = 'img' src="shopping-image.png" alt="Shopping List Picture">
+                <h1>Shopping List</h1>
+        </header>
 
-    <Header class = 'hd'>
-        <div id = 'ttl'>
-            <img id = 'img' src="shopping-image.png" alt="Shopping List Picture">
-            <h1>Shopping List</h1>
-        </div>
-    </Header>
 
     <!--Adding the text area and the submit button -->
-    <Section class = form-section>
-        <div class = 'input-form'>
-            <input id="atext" type = "text">
-            <input id="bttn" type = "submit">
-        </div>
-    </Section>
+        <form id = form-section>
+            <div class = 'input-form'>
+                <input id="atext" type = "text" placeholder="Enter Item">
+            </div>
+            <div class = 'input-form'>
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-plus"></i> Add Item
+                </button>
+            </div>
+        </form>
+         
+            <div class = 'list-item'>
+                <ul id="items">
+                    <li class="shopitem">Eggs
+                        <button class="remove-item btn-link text-red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    <li class="shopitem">Milk
+                        <button class="remove-item btn-link text-red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    <li class="shopitem">Cheese
+                        <button class="remove-item btn-link text-red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+    
 
-    <Section class = 'list-section'>
-        <div class = 'list-item'>
-            <ul id="items">
-                <li class="shopitem">Eggs</li>
-                <li class="shopitem">Milk</li>
-                <li class="shopitem">Cheese</li>
-            </ul>
-        </div>
+    </div>
+    
 </body>
 </html>

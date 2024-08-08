@@ -1,33 +1,66 @@
 
-/*global */
-body{
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* global for container */
+
 
 .container {
-    text-align: center;
+  width: 500px;
+  height:  500px;
+  margin: 10px auto;
+  padding: 20px;
+  }
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+
 }
 
 /* image- need to align with text and to make smaller */
+.hd h1 {
+    font-weight: 300;
+    margin-left: 10px;
+    margin-bottom: .5cm;
+    border: 30px ;
 
-.ttl{
-    margin: 10px;
-    border: 10px;
-}
-
-.ttl h1{
-    float: right;
-}
+  }
 
 
 .hd img{
-    float: left;
     left:210px;
     top:20px;
+    bottom: 100px ;
     width:100px;
+}
+
+/* formating text area*/
+
+#form-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  top:200px;
+  bottom: 200px ;
+  width: 100%;
+}
+
+
+#atext{
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.btn{
+  background-color: black;
+  color: white;
+  border: none;
 }

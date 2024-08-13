@@ -44,8 +44,9 @@ header{
 /* formating text area*/
 
 #form-section{
+  height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   flex-direction: column;
   margin-bottom: 20px;
   top:200px;
@@ -55,12 +56,24 @@ header{
 
 
 #atext{
-  width: 75%;
-  margin-bottom: 10px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  
 }
 
+/* this section is for the add button*/
 .btn{
   background-color: black;
   color: white;
   border: none;
+  padding: 10px 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+.btn:hover{
+  background-color: #dcdc; 
+  color: white;
 }
